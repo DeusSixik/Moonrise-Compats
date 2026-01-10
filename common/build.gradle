@@ -30,6 +30,9 @@ dependencies {
 
     modCompileOnly "curse.maven:woot-revived-1337238:7381791"
 
+//    modCompileOnly "curse.maven:alexs-mobs-1-21-1-port-1415721:7424183"
+    modCompileOnly "curse.maven:citadel-1-21-1-port-1415723:7432825"
+
     modCompileOnly "curse.maven:amendments-896746:7440267"
 
     compileOnlyApi "net.neoforged:neoforge:$rootProject.neoforge_version"
