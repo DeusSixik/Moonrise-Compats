@@ -15,11 +15,9 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.sixik.moonrise_compats.fabric.Moonrise_compatsFabric"
+      "dev.sixik.moonrise_compats.fabric.MoonriseCompatsFabric"
     ],
-    "client": [
-      "dev.sixik.moonrise_compats.fabric.client.Moonrise_compatsFabricClient"
-    ]
+    "client": []
   },
   "mixins": [
     "moonrise_compats.mixins.json"
