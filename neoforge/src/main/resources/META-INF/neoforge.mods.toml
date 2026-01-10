@@ -1,0 +1,32 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "GNU GPL 3.0"
+
+[[mods]]
+modId = "moonrise_compats"
+version = "${version}"
+displayName = "Moonrise Compats"
+authors = ""
+description = '''
+
+'''
+#logoFile = ""
+
+[[dependencies.moonrise_compats]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.moonrise_compats]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "moonrise_compats.mixins.json"

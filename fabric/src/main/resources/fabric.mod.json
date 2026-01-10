@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "moonrise_compats",
+  "version": "${version}",
+  "name": "Moonrise Compats",
+  "description": "",
+  "authors": [
+    ""
+  ],
+  "contact": {
+    "homepage": ""
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/moonrise_compats/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.sixik.moonrise_compats.fabric.Moonrise_compatsFabric"
+    ],
+    "client": [
+      "dev.sixik.moonrise_compats.fabric.client.Moonrise_compatsFabricClient"
+    ]
+  },
+  "mixins": [
+    "moonrise_compats.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.1",
+    "java": ">=21"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
