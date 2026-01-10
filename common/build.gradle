@@ -30,6 +30,8 @@ dependencies {
 
     modCompileOnly "curse.maven:woot-revived-1337238:7381791"
 
+    modCompileOnly "curse.maven:amendments-896746:7440267"
+
     compileOnlyApi "net.neoforged:neoforge:$rootProject.neoforge_version"
 
     modCompileOnly "curse.maven:moonrise-1096335:7089177"

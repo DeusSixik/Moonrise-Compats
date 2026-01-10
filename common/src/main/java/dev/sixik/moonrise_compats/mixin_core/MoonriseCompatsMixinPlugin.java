@@ -18,7 +18,39 @@ public class MoonriseCompatsMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public void onLoad(String s) {
-
+        create("team.creative.enhancedvisuals.EnhancedVisuals", new MixinApplier.Param(
+                "dev.sixik.moonrise_compats.mixin.fixes.enhancedvisuals.EnhancedVisuals$ExplosionMixin",
+                "team.creative.enhancedvisuals.mixin.ExplosionMixin"
+        ));
+        create("", new MixinApplier.Param(
+                "dev.sixik.moonrise_compats.mixin.fixes.moonrise.LevelMixin",
+                "ca.spottedleaf.moonrise.mixin.chunk_system.LevelMixin"
+        ), new MixinApplier.Param(
+                "",
+                "ca.spottedleaf.moonrise.mixin.chunk_system.ChunkGeneratorMixin"
+        ));
+        create("com.copycatsplus.copycats.Copycats", new MixinApplier.Param(
+                "dev.sixik.moonrise_compats.mixin.fixes.copycat.CopyCats$LiquidBlockRendererMixin$Fix",
+                "com.copycatsplus.copycats.mixin.foundation.copycat.LiquidBlockRendererMixin"
+        ));
+        create("com.cupboard.Cupboard", new MixinApplier.Param(
+                "",
+                "com.cupboard.mixin.ChunkLoadDebug"
+        ));
+        create("com.teamabnormals.environmental.core.Environmental", new MixinApplier.Param(
+                "dev.sixik.moonrise_compats.mixin.fixes.environmental.Environmental$SurfaceSystemMixin",
+                "com.teamabnormals.environmental.core.mixin.SurfaceSystemMixin"
+        ));
+        create("net.mehvahdjukaar.amendments.Amendments",
+                new MixinApplier.Param(
+                        "dev.sixik.moonrise_compats.mixin.fixes.amendments.Amendments$ExplosionMixin",
+                        "net.mehvahdjukaar.amendments.mixins.ExplosionMixin"
+                ),
+                new MixinApplier.Param(
+                        "dev.sixik.moonrise_compats.mixin.fixes.amendments.Amendments$Moonrise$ExplosionMixin",
+                        "net.mehvahdjukaar.amendments.mixins.ExplosionMixin"
+                )
+        );
     }
 
     @Override

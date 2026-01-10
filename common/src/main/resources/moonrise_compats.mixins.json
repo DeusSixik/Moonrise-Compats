@@ -8,6 +8,8 @@
     "fixes.copycat.CopyCats$LiquidBlockRendererMixin$Fix"
   ],
   "mixins": [
+    "fixes.amendments.Amendments$ExplosionMixin",
+    "fixes.amendments.Amendments$Moonrise$ExplosionMixin",
     "fixes.enhancedvisuals.EnhancedVisuals$ExplosionMixin",
     "fixes.ice_and_fire.IceAndFire$ChunkCache$FixGetFullChunkFufure",
     "fixes.ice_and_fire.IceAndFire$ClientEvents$FixEntityStorage",
