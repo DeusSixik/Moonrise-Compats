@@ -5,8 +5,19 @@
   "plugin": "dev.sixik.moonrise_compats.mixin_core.MoonriseCompatsMixinPlugin",
   "minVersion": "0.8",
   "client": [
+    "fixes.copycat.CopyCats$LiquidBlockRendererMixin$Fix"
   ],
   "mixins": [
+    "fixes.enhancedvisuals.EnhancedVisuals$ExplosionMixin",
+    "fixes.ice_and_fire.IceAndFire$ChunkCache$FixGetFullChunkFufure",
+    "fixes.ice_and_fire.IceAndFire$ClientEvents$FixEntityStorage",
+    "fixes.ice_and_fire.IceAndFire$WorldChunkUtilMixin",
+    "fixes.immersive_optimization.MixinTickScheduler$FixEntityList",
+    "fixes.malum.Malum$SpiritTypeProperty$ImplementMethod",
+    "fixes.moonrise.EntityLookupMixin$AddPath",
+    "fixes.moonrise.LevelMixin$FixFinalMethods",
+    "fixes.moonrise.StateHolderMixin$FixNullReference",
+    "fixes.wootrevived.DropSimulatorMixin$FixEntityManager"
   ],
   "injectors": {
     "defaultRequire": 1

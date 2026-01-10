@@ -7,9 +7,32 @@ dependencies {
     // which get remapped to the correct annotations on each platform.
     // Do NOT use other classes from Fabric Loader.
 
-    compileOnly(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:0.3.7-beta.1"))
+    modCompileOnly(annotationProcessor("com.github.bawnorton.mixinsquared:mixinsquared-common:0.3.7-beta.1"))
 
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
 
-    api files("../libs/Moonrise-${rootProject.moonrise_version}.jar")
+    modCompileOnly "curse.maven:enhancedvisuals-255389:7003054"
+    modCompileOnly "curse.maven:iceandfire-ce-1040076:7350158"
+
+    modCompileOnly "curse.maven:iceandfire-ce-1040076:7037563"
+    modCompileOnly "curse.maven:uranus-1010827:6979353"
+    modCompileOnly "curse.maven:jupiter-1072905:6843052"
+    modCompileOnly "curse.maven:architectury-api-419699:5786327"
+    modCompileOnly "com.iafenvoy.integration:integration-neoforge:0.2"
+
+    modCompileOnly "curse.maven:immersive-optimization-1163206:6969894"
+    modCompileOnly "curse.maven:malum-484064:7307339"
+
+    modCompileOnly "curse.maven:create-328085:6641610"
+    modCompileOnly "net.createmod.ponder:Ponder-NeoForge-${minecraft_version}:1.0.56"
+    compileOnly "curse.maven:copycats-968398:7251823"
+    modCompileOnly "com.tterrag.registrate:Registrate:MC1.21-1.3.0+67"
+
+    modCompileOnly "curse.maven:woot-revived-1337238:7381791"
+
+    compileOnlyApi "net.neoforged:neoforge:$rootProject.neoforge_version"
+
+    modCompileOnly "curse.maven:moonrise-1096335:7089177"
+
+//    modApi files("../libs/Moonrise-${rootProject.moonrise_version}.jar")
 }
