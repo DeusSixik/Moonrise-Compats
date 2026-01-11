@@ -51,6 +51,12 @@ public class MoonriseCompatsMixinPlugin implements IMixinConfigPlugin {
                         "net.mehvahdjukaar.amendments.mixins.ExplosionMixin"
                 )
         );
+        create("cn.leolezury.eternalstarlight.common.EternalStarlight",
+                new MixinApplier.Param(
+                        "dev.sixik.moonrise_compats.mixin.fixes.eternal_starlight.EternalStarlight$Moonrise$EntityMixin",
+                        "cn.leolezury.eternalstarlight.common.mixin.EntityMixin"
+                )
+        );
     }
 
     @Override

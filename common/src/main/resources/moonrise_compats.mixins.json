@@ -13,6 +13,7 @@
     "fixes.citadel.Citadel$ChunkCache$FixGetFullChunkFutures",
     "fixes.citadel.Citadel$WorldChunkUtil$FixGetFullChunk",
     "fixes.enhancedvisuals.EnhancedVisuals$ExplosionMixin",
+    "fixes.eternal_starlight.EternalStarlight$Moonrise$EntityMixin",
     "fixes.ice_and_fire.IceAndFire$ChunkCache$FixGetFullChunkFufure",
     "fixes.ice_and_fire.IceAndFire$ClientEvents$FixEntityStorage",
     "fixes.ice_and_fire.IceAndFire$WorldChunkUtilMixin",

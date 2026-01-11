@@ -39,5 +39,7 @@ dependencies {
 
     modCompileOnly "curse.maven:moonrise-1096335:7089177"
 
+    modCompileOnly "curse.maven:eternal-starlight-1080592:7304922"
+
 //    modApi files("../libs/Moonrise-${rootProject.moonrise_version}.jar")
 }
