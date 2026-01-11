@@ -57,6 +57,11 @@ public class MoonriseCompatsMixinPlugin implements IMixinConfigPlugin {
                         "cn.leolezury.eternalstarlight.common.mixin.EntityMixin"
                 )
         );
+        create("net.fabricmc.fabric.impl.event.lifecycle.LifecycleEventsImpl",
+                new MixinApplier.Param(
+                        "dev.sixik.moonrise_compats.mixin.fixes.forgified_fabric_api.FFA$Moonrise$ChunkHolderMixin",
+                        "net.fabricmc.fabric.mixin.event.lifecycle.ChunkHolderMixin"
+                ));
     }
 
     @Override

@@ -41,5 +41,9 @@ dependencies {
 
     modCompileOnly "curse.maven:eternal-starlight-1080592:7304922"
 
+//    modCompileOnly "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
+
+    modCompileOnly "org.sinytra.forgified-fabric-api:forgified-fabric-api:0.116.7+2.2.0+1.21.1"
+
 //    modApi files("../libs/Moonrise-${rootProject.moonrise_version}.jar")
 }
