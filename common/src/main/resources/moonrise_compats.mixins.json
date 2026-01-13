@@ -10,6 +10,8 @@
   "mixins": [
     "fixes.amendments.Amendments$ExplosionMixin",
     "fixes.amendments.Amendments$Moonrise$ExplosionMixin",
+    "fixes.blueprint.Blueprint$ServerLevelMixin",
+    "fixes.blueprint.Blueprint$ServerLevelMixin",
     "fixes.citadel.Citadel$ChunkCache$FixGetFullChunkFutures",
     "fixes.citadel.Citadel$WorldChunkUtil$FixGetFullChunk",
     "fixes.enhancedvisuals.EnhancedVisuals$ExplosionMixin",

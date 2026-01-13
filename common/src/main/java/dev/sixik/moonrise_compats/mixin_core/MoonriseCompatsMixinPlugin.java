@@ -62,6 +62,12 @@ public class MoonriseCompatsMixinPlugin implements IMixinConfigPlugin {
                         "dev.sixik.moonrise_compats.mixin.fixes.forgified_fabric_api.FFA$Moonrise$ChunkHolderMixin",
                         "net.fabricmc.fabric.mixin.event.lifecycle.ChunkHolderMixin"
                 ));
+
+        create("com.teamabnormals.blueprint.core.Blueprint",
+                new MixinApplier.Param(
+                        "dev.sixik.moonrise_compats.mixin.fixes.blueprint.Blueprint$ServerLevelMixin",
+                        "com.teamabnormals.blueprint.core.mixin.ServerLevelMixin"
+                ));
     }
 
     @Override

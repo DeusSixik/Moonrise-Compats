@@ -45,5 +45,9 @@ dependencies {
 
     modCompileOnly "org.sinytra.forgified-fabric-api:forgified-fabric-api:0.116.7+2.2.0+1.21.1"
 
+    modCompileOnly "curse.maven:blueprint-382216:7148094"
+
+    modCompileOnly "curse.maven:environmental-388992:7122147"
+
 //    modApi files("../libs/Moonrise-${rootProject.moonrise_version}.jar")
 }
