@@ -49,5 +49,7 @@ dependencies {
 
     modCompileOnly "curse.maven:environmental-388992:7122147"
 
+    modCompileOnly "curse.maven:lets-do-vinery-704465:7218656"
+
 //    modApi files("../libs/Moonrise-${rootProject.moonrise_version}.jar")
 }

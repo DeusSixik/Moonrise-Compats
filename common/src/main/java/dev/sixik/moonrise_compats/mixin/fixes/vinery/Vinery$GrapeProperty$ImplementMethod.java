@@ -1,9 +1,10 @@
-package dev.sixik.moonrise_compats.mixin.fixes.malum;
+package dev.sixik.moonrise_compats.mixin.fixes.vinery;
 
 import ca.spottedleaf.moonrise.patches.blockstate_propertyaccess.PropertyAccess;
 import com.google.common.collect.ImmutableSet;
-import com.sammy.malum.core.systems.spirit.SpiritTypeProperty;
 import net.minecraft.world.level.block.state.properties.Property;
+import net.satisfy.vinery.core.block.state.properties.GrapeProperty;
+import net.satisfy.vinery.core.util.GrapeType;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -11,23 +12,24 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
-@Mixin(SpiritTypeProperty.class)
-public abstract class Malum$SpiritTypeProperty$ImplementMethod extends Property<String> implements PropertyAccess<String> {
+@Mixin(value = GrapeProperty.class, remap = false)
+public abstract class Vinery$GrapeProperty$ImplementMethod extends Property<GrapeType> implements PropertyAccess<GrapeType> {
 
-    @Final
     @Shadow
-    private ImmutableSet<String> values;
-
+    @Final
+    private Set<GrapeType> values;
     @Unique
-    private Map<String, Integer> moonrise$idLookup;
+    private Map<GrapeType, Integer> moonrise$idLookup;
 
-    protected Malum$SpiritTypeProperty$ImplementMethod(String name, Class<String> clazz) {
-        super(name, clazz);
+    protected Vinery$GrapeProperty$ImplementMethod(String string, Class<GrapeType> class_) {
+        super(string, class_);
     }
 
+
     @Override
-    public final int moonrise$getIdFor(final String value) {
+    public final int moonrise$getIdFor(final GrapeType value) {
         Integer id = moonrise$idLookup.get(value);
         return id != null ? id : -1;
     }
@@ -35,10 +37,10 @@ public abstract class Malum$SpiritTypeProperty$ImplementMethod extends Property<
     @Inject(method = "<init>*", at = @At("RETURN"))
     private void initMoonriseLookup(CallbackInfo ci) {
         this.moonrise$idLookup = new HashMap<>();
-        String[] moonrise$byId = new String[this.values.size()];
+        GrapeType[] moonrise$byId = new GrapeType[this.values.size()];
 
         int id = 0;
-        for (String v : this.values) {
+        for (GrapeType v : this.values) {
             moonrise$idLookup.put(v, id);
             moonrise$byId[id++] = v;
         }

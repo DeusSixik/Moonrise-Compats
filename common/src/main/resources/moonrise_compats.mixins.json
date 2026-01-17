@@ -11,7 +11,6 @@
     "fixes.amendments.Amendments$ExplosionMixin",
     "fixes.amendments.Amendments$Moonrise$ExplosionMixin",
     "fixes.blueprint.Blueprint$ServerLevelMixin",
-    "fixes.blueprint.Blueprint$ServerLevelMixin",
     "fixes.citadel.Citadel$ChunkCache$FixGetFullChunkFutures",
     "fixes.citadel.Citadel$WorldChunkUtil$FixGetFullChunk",
     "fixes.enhancedvisuals.EnhancedVisuals$ExplosionMixin",
@@ -25,7 +24,9 @@
     "fixes.moonrise.EntityLookupMixin$AddPath",
     "fixes.moonrise.LevelMixin$FixFinalMethods",
     "fixes.moonrise.StateHolderMixin$FixNullReference",
-    "fixes.wootrevived.DropSimulatorMixin$FixEntityManager"
+    "fixes.vinery.Vinery$GrapeProperty$ImplementMethod",
+    "fixes.wootrevived.DropSimulatorMixin$FixEntityManager",
+    "vanilla.MixinFrontAndTopNullGuard"
   ],
   "injectors": {
     "defaultRequire": 1
