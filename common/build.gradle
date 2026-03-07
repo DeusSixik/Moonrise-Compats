@@ -51,5 +51,7 @@ dependencies {
 
     modCompileOnly "curse.maven:lets-do-vinery-704465:7218656"
 
+    modCompileOnly "curse.maven:industrial-upgrade-372007:7538250"
+
 //    modApi files("../libs/Moonrise-${rootProject.moonrise_version}.jar")
 }

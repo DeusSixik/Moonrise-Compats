@@ -20,6 +20,7 @@
     "fixes.ice_and_fire.IceAndFire$ClientEvents$FixEntityStorage",
     "fixes.ice_and_fire.IceAndFire$WorldChunkUtilMixin",
     "fixes.immersive_optimization.MixinTickScheduler$FixEntityList",
+    "fixes.industrial_upgrade.MixinTypeProperty$ImplementationMethod",
     "fixes.malum.Malum$SpiritTypeProperty$ImplementMethod",
     "fixes.moonrise.EntityLookupMixin$AddPath",
     "fixes.moonrise.LevelMixin$FixFinalMethods",
