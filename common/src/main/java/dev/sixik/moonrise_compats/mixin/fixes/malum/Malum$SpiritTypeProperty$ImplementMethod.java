@@ -3,6 +3,7 @@ package dev.sixik.moonrise_compats.mixin.fixes.malum;
 import ca.spottedleaf.moonrise.patches.blockstate_propertyaccess.PropertyAccess;
 import com.google.common.collect.ImmutableSet;
 import com.sammy.malum.core.systems.spirit.SpiritTypeProperty;
+import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 import net.minecraft.world.level.block.state.properties.Property;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
@@ -20,7 +21,7 @@ public abstract class Malum$SpiritTypeProperty$ImplementMethod extends Property<
     private ImmutableSet<String> values;
 
     @Unique
-    private Map<String, Integer> moonrise$idLookup;
+    private Object2IntOpenHashMap<String> moonrise$idLookup;
 
     protected Malum$SpiritTypeProperty$ImplementMethod(String name, Class<String> clazz) {
         super(name, clazz);
@@ -28,27 +29,27 @@ public abstract class Malum$SpiritTypeProperty$ImplementMethod extends Property<
 
     @Override
     public final int moonrise$getIdFor(final String value) {
-        Integer id = moonrise$idLookup.get(value);
-        return id != null ? id : -1;
+        return this.moonrise$idLookup.getOrDefault(value, -1);
     }
 
     @Inject(method = "<init>*", at = @At("RETURN"))
     private void initMoonriseLookup(CallbackInfo ci) {
-        this.moonrise$idLookup = new HashMap<>();
+        this.moonrise$idLookup = new Object2IntOpenHashMap<>(this.values.size());
+        this.moonrise$idLookup.defaultReturnValue(-1);
+
         String[] moonrise$byId = new String[this.values.size()];
 
         int id = 0;
         for (String v : this.values) {
-            moonrise$idLookup.put(v, id);
+            this.moonrise$idLookup.put(v, id);
             moonrise$byId[id++] = v;
         }
 
-        this.moonrise$setById(moonrise$byId);
+        try {
+            this.moonrise$setById(moonrise$byId);
+        } catch (IllegalStateException ignored) { }
     }
 
-    /**
-     * Identity equals (как у всех Moonrise PropertyMixin)
-     */
     @Override
     public boolean equals(final Object obj) {
         return this == obj;

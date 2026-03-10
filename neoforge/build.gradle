@@ -40,8 +40,12 @@ dependencies {
 //    modImplementation files("../libs/Moonrise-NeoForge-${rootProject.moonrise_version}.jar")
 
     modRuntimeOnly "curse.maven:blueprint-382216:7148094"
-
     modRuntimeOnly "curse.maven:environmental-388992:7122147"
+
+    modRuntimeOnly "curse.maven:malum-484064:7307339"
+    modRuntimeOnly "curse.maven:gaze-a-malum-addon-1273454:7261638"
+    modRuntimeOnly "curse.maven:lodestone-616457:7264731"
+    modRuntimeOnly "curse.maven:curios-309927:6529130"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')

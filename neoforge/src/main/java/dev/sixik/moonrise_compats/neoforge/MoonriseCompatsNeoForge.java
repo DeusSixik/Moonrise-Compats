@@ -8,5 +8,6 @@ public final class MoonriseCompatsNeoForge {
     public MoonriseCompatsNeoForge() {
         // Run our common setup.
         MoonriseCompats.init();
+
     }
 }
