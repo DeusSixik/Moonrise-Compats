@@ -68,6 +68,12 @@ public class MoonriseCompatsMixinPlugin implements IMixinConfigPlugin {
                         "dev.sixik.moonrise_compats.mixin.fixes.blueprint.Blueprint$ServerLevelMixin",
                         "com.teamabnormals.blueprint.core.mixin.ServerLevelMixin"
                 ));
+
+        create("org.confluence.mod.Confluence",
+                new MixinApplier.Param(
+                        "dev.sixik.moonrise_compats.mixin.fixes.confluence.Confluence$StateHolderMixin$FixGetValue",
+                        "org.confluence.mod.mixin.block.StateHolderMixin"
+                ));
     }
 
     @Override

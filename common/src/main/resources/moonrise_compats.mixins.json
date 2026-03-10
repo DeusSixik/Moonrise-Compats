@@ -13,6 +13,7 @@
     "fixes.blueprint.Blueprint$ServerLevelMixin",
     "fixes.citadel.Citadel$ChunkCache$FixGetFullChunkFutures",
     "fixes.citadel.Citadel$WorldChunkUtil$FixGetFullChunk",
+    "fixes.confluence.Confluence$StateHolderMixin$FixGetValue",
     "fixes.enhancedvisuals.EnhancedVisuals$ExplosionMixin",
     "fixes.eternal_starlight.EternalStarlight$Moonrise$EntityMixin",
     "fixes.forgified_fabric_api.FFA$Moonrise$ChunkHolderMixin",

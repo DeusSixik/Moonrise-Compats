@@ -42,10 +42,24 @@ dependencies {
     modRuntimeOnly "curse.maven:blueprint-382216:7148094"
     modRuntimeOnly "curse.maven:environmental-388992:7122147"
 
-    modRuntimeOnly "curse.maven:malum-484064:7307339"
-    modRuntimeOnly "curse.maven:gaze-a-malum-addon-1273454:7261638"
-    modRuntimeOnly "curse.maven:lodestone-616457:7264731"
+//    modRuntimeOnly "curse.maven:malum-484064:7307339"
+//    modRuntimeOnly "curse.maven:gaze-a-malum-addon-1273454:7261638"
+//    modRuntimeOnly "curse.maven:lodestone-616457:7264731"
+    modRuntimeOnly "curse.maven:confluence-1209464:7677430"
     modRuntimeOnly "curse.maven:curios-309927:6529130"
+
+    modRuntimeOnly files("../libs/geckolib-neoforge-1.21.1-4.8.2.jar")
+    modRuntimeOnly files("../libs/nowebsite.makertechno.the_trackers.the_trackers-1.21.1-0.2.5.jar")
+    modRuntimeOnly files("../libs/org.confluence.lib.confluence_magic_lib-0.0.8.jar")
+    modRuntimeOnly files("../libs/org.confluence.terra_curio-1.2.0.jar")
+    modRuntimeOnly files("../libs/org.confluence.terra_entity-1.2.1.jar")
+    modRuntimeOnly files("../libs/org.confluence.terra_furniture.terra_furniture-1.21.1-0.0.5.jar")
+    modRuntimeOnly files("../libs/org.confluence.terra_guns-1.21.1-1.0.jar")
+    modRuntimeOnly files("../libs/ParticleStorm-1.1.4.3.jar")
+    modRuntimeOnly files("../libs/TerraBlender-neoforge-1.21.1-4.1.0.8.jar")
+    modRuntimeOnly files("../libs/ThreeDimensionParticle-core-1.0.5.jar")
+
+    minecraftClientRuntimeLibraries("org.apache.commons:commons-math3:3.6.1")
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')

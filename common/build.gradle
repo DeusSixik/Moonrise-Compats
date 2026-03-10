@@ -54,5 +54,19 @@ dependencies {
 
     modCompileOnly "curse.maven:industrial-upgrade-372007:7538250"
 
+    modCompileOnly "curse.maven:confluence-1209464:7677430"
+    modCompileOnly files("../libs/geckolib-neoforge-1.21.1-4.8.2.jar")
+    modCompileOnly files("../libs/nowebsite.makertechno.the_trackers.the_trackers-1.21.1-0.2.5.jar")
+    modCompileOnly files("../libs/org.confluence.lib.confluence_magic_lib-0.0.8.jar")
+    modCompileOnly files("../libs/org.confluence.terra_curio-1.2.0.jar")
+    modCompileOnly files("../libs/org.confluence.terra_entity-1.2.1.jar")
+    modCompileOnly files("../libs/org.confluence.terra_furniture.terra_furniture-1.21.1-0.0.5.jar")
+    modCompileOnly files("../libs/org.confluence.terra_guns-1.21.1-1.0.jar")
+    modCompileOnly files("../libs/ParticleStorm-1.1.4.3.jar")
+    modCompileOnly files("../libs/TerraBlender-neoforge-1.21.1-4.1.0.8.jar")
+    modCompileOnly files("../libs/ThreeDimensionParticle-core-1.0.5.jar")
+
+    implementation "org.apache.commons:commons-math3:3.6.1"
+
 //    modApi files("../libs/Moonrise-${rootProject.moonrise_version}.jar")
 }
